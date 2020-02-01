@@ -19,14 +19,14 @@ Doing CSS well is quite difficult. That's because the cascading part is more of 
 As IE11 is now being officially dropped and replace by the new edge we can start doing some cool stuff, I demonstrated the use of CSS Variables here for 2 easy appliances, on of them is showing a background image instead of using javascript to do some calculations.
 
 ### Conditional chaining (Is?.this?.[array]?.really?.here)
-New fancy trick with ES6! Not every browsers supports it yet. Although I'm quite surprised I don't need to transpile it in the newest Chrome. However that might be because of create-react-app.
+New fancy trick with ES6! Not every browsers supports it yet. Although I'm quite surprised I don't need to transpile it in the newest Chrome. However that might be because of react-app shell.
 
 
 ## Omitted techniques
 
 ### Typescript & PropTypes
 
-Optional chaning doesn't work yet in Typescript. So normally I use propTypes (athough I chose to omit it. Eventually it also does (however less strict) a type checking. Hopefully Typescript will have support for optional chaining quite soon.
+Optional chaining doesn't work yet in Typescript. So normally I use propTypes (athough I chose to omit it. Eventually it also does (however less strict) a type checking. Hopefully Typescript will have support for optional chaining quite soon.
 
 ### Jest
 I fully agree that testing is really important, both unit test and itegration tests are something that would be a requirement in a company like Wehkamp. But because of the short time allotted to this assessment I've chosen to skip it. If you would like to know more about my testing skills we can do this in a conversation. 
@@ -38,7 +38,7 @@ For this assesment I omitted all kinds of caching for the different services. I 
 CSS modules is the components layer in the ITCSS approach. For components that cannot stand with the objects of OOCSS I normally use CSS modules. However, this project was so small I didn't really need to style anything.
 
 ### SSR / NextJS
-Server-side Rendering is actually really important for both SEO and performance. As opossed to PREACT-CLI (a nice small react alternative) create-react-app doesn't come with SSR out of the box, so I've chosen to not implement SSR for now, although it is really important in my opinion. This also speeds up service call to internal services as the fetch won't be ever made to the clients computer.
+Server-side Rendering is actually really important for both SEO and performance. As opossed to PREACT-CLI (a nice small react alternative) this create-react-app shell doesn't come with SSR out of the box, so I've chosen to not implement SSR for now, although it is really important in my opinion. This also speeds up service call to internal services as the fetch won't be ever made to the clients computer.
 
 ### GraphQL
 GraphQL is a tricky one. It can easily be misused and it's quite on the heavy side. However, if the endpoints are also in GraphQL or the services are not tailormade but standardised with loads of data you don't need GrapgQL could be very nice to use
