@@ -1,0 +1,47 @@
+{
+  "name": "tq-assignment-js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "clsx": "^1.0.4",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "build:css": "postcss src/styles/index.css -o src/index.css",
+    "watch:css": "postcss src/styles/index.css -o src/index.css -w",
+    "start:js": "react-scripts start",
+    "build:js": "react-scripts build",
+    "start": "concurrently \"npm:watch:css\" \"npm:start:js\" \"json-server db/db.json --port 3001\"",
+    "build": "concurrently \"npm:build:css\" \"npm:build:js\",",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.5",
+    "concurrently": "^4.1.0",
+    "json-server": "^0.15.0",
+    "postcss-cli": "^7.1.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.1.4",
+    "tailwindcss-pseudo": "^1.0.3"
+  }
+}
