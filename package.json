@@ -13,11 +13,11 @@
   "scripts": {
     "build:css": "postcss src/styles/index.css -o src/index.css",
     "watch:css": "postcss src/styles/index.css -o src/index.css -w",
-    "start:js": "react-scripts start",
-    "build:js": "react-scripts build",
+    "start:js": "react-app-rewired start",
+    "build:js": "react-app-rewired build",
     "start": "concurrently \"npm:watch:css\" \"npm:start:js\" \"json-server db/db.json --port 3001\"",
     "build": "concurrently \"npm:build:css\" \"npm:build:js\",",
-    "test": "react-scripts test"
+    "test": "react-app-rewired test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,12 +35,15 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
     "@fullhuman/postcss-purgecss": "^2.0.5",
     "concurrently": "^4.1.0",
+    "customize-cra": "^0.9.1",
     "json-server": "^0.15.0",
     "postcss-cli": "^7.1.0",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^12.0.1",
+    "react-app-rewired": "^2.1.5",
     "tailwindcss": "^1.1.4",
     "tailwindcss-pseudo": "^1.0.3"
   }
